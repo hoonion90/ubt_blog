@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+## whoami
+꿈이 없던 어린 시절에는 그냥 시키는 공부를 하고 그냥 그렇게 어디서 공부좀한다는 소리를 들으며 지역에서 공부좀 한다는 사람들이 간다는   고등학교에 진학하였고 오티때 강연을 듣고 꿈에대해서 생각하다가 처음으로 진지하게 프로게이머를 꿈꾸었고 부모님의 반대속에 그렇게 힘든 시기를 보내다가 현재는 프로게이머가 아닌 프로그래머를 하고 있습니다. 
+게임보다 현재는 개발에 더 빠져있는 것 같아요.ㅎㅎ
 
 
-[jekyll-organization]: https://github.com/jekyll
+## watume?
+watu.me 는 저에게는 스스로 개발을 공부하면서 재미있는 서비스를 만들어보려는 시도입니다.
+공부를 하는김에 재미있는 프로젝트를 만들어서 해보려고 하고있어요.
+
+## 마지막으로
+음 항상 나를 응원해주는 하라야 사랑해 😍
+내가 항상 행복하게 해줄 수 있을지는 몰라도
+내가 항상 곁에 있을게
