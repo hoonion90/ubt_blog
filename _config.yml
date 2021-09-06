@@ -23,7 +23,6 @@ email: watume32@gmail.com
 description: 방문해주셔서 감사합니다.🥰😘  #>- # this means to ignore newlines until "baseurl:"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://www.watu.me/" # the base hostname & protocol for your site, e.g. http://example.com 
-github_username:  hoonion90
 
 # Build settings
 theme: minima
