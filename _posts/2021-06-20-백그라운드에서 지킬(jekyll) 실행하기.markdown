@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "백그라운드에서 지킬(jekyll) 실행하기"
+date:   2021-06-30 00:09:31 +0900
+categories: jekyll
+---
+
+## 백그라운드에서 지킬 실행
+지킬은 간단한 웹 사이트를 개발하는 데 사용할 수 있는 정적 웹 사이트 생성기입니다. 데스크톱에서 지킬을 실행하는 경우 로컬 서버를 실행하여 정적 웹 사이트를 볼 수 있습니다. 웹 서버를 항상 백그라운드에서 실행하도록 하려면 대신 이 명령을 실행할 수 있습니다.
+
+보통은 이렇게 수행합니다.
+
+```
+$ jekyll serve
+```
+
+##백그라운드에서 수행
+
+```
+$ jekyll serve > /dev/null 2>&1 &
+```
+
+add incremental which builds only deltas
+
+```
+$ jekyll serve --incremental > /dev/null 2>&1 &
+```
+
+## jekyll 서버 프로세스를 먼저 찾습니다.
+
+find jekyll server process
+
+```
+$ ps -ef | grep jekyll
+```
+
+강제 종료 시킵니다.
+
+```
+$ kill -9 pid#
+```
