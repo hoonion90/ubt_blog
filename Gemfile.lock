@@ -76,7 +76,11 @@ GEM
     wdm (0.1.1)
 
 PLATFORMS
+<<<<<<< HEAD
+  ruby
+=======
   x64-mingw32
+>>>>>>> 19174952e1ce4cc1708b9992de297244a723bc65
   x86_64-linux
 
 DEPENDENCIES
