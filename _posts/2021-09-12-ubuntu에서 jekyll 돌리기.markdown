@@ -57,7 +57,7 @@ bundle exec jekyll serve
 
 아래 경로에서 테스트합니다.
 
-[http://localhost:4000]: http://localhost:4000
+[http://localhost:4000]
 
 
 ## ubuntu에서 백그라운드로 지킬(jekyll)을 실행할 때
@@ -68,5 +68,5 @@ nohup로 jekyll을 수행하면 정상적으로 돌아갈 줄 알았는데  문�
 [2021-06-20-백그라운드에서 지킬(jekyll) 실행하기]
 
 
-
+[http://localhost:4000]: http://localhost:4000
 [2021-06-20-백그라운드에서 지킬(jekyll) 실행하기]: http://www.watu.me/blog/jekyll/2021/06/30/%EB%B0%B1%EA%B7%B8%EB%9D%BC%EC%9A%B4%EB%93%9C%EC%97%90%EC%84%9C-%EC%A7%80%ED%82%AC(jekyll)-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0.html
