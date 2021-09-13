@@ -17,7 +17,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
+host: 10.0.0.98
+port: 4000
 title: watu.me
 email: watume32@gmail.com
 description: >-
@@ -52,6 +53,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-host: 10.0.0.98
-port: 4000
