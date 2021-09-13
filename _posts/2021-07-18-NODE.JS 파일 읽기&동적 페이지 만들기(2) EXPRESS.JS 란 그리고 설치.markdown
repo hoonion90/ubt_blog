@@ -1,0 +1,121 @@
+---
+layout: post
+title:  "NODE.JS 파일 읽기&동적 페이지 만들기(2) EXPRESS.JS 란 그리고 설치"
+date:   2021-07-18 12:05:41 +0900
+categories: nodejs
+---
+
+## 이전 글 링크
+
+### [node.js 파일 읽기 / 동적 페이지 만들기(1)](https://fehoon.tistory.com/161)
+
+## express.js 란?
+
+Express.js, 또는 간단히 익스프레스는 Node.js를 위한 웹 프레임워크의 하나로, MIT 허가서로 라이선스되는 자유-오픈 소스 소프트웨어로 출시되었다. 웹 애플리케이션, API 개발을 위해 설계되었다. Node.js의 사실상의 표준 서버 프레임워크로 불리고 있다.
+
+간단하게 node.js의 표준 서버 프레임워크로 이해하고 넘어가면 될 것 같다.
+
+## express.js 설치
+
+> [https://expressjs.com/ko/starter/installing.html](https://expressjs.com/ko/starter/installing.html) (참조)
+
+nodejs가 설치가 되어 있으면 아래 커맨드로 설치 가능.
+
+```
+$ npm install express --save
+```
+
+> Express를 임시로 설치하고 종속 항목 목록에 추가하지 않으려면, 다음과 같이 --save 옵션을 생략하십시오.
+
+```
+$ npm install express
+```
+
+> save 옵션을 통해 설치된 Node 모듈은 package.json 파일 내의 dependencies 목록에 추가됩니다. 이후 app 디렉토리에서 npm install을 실행하면 종속 항목 목록 내의 모듈이 자동으로 설치됩니다.
+
+## exress.js로 전환하기
+
+아래와 같이 변환 시켜줍니다.
+
+### nodejs(전)
+
+```
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+
+var app = http.createServer(function(request,response){
+}
+```
+
+### express.js(후)
+
+```
+var express = require('express');
+var app = express();
+
+app.get('/', function (request, response) {
+}
+```
+
+## static 경로 지정해주기
+
+아래 이미지의 경로를 찾지 못해서 이미지가 표시되지 않는다면 아래 방법을 적용합니다.
+
+```
+<img src="coding.jpg" width="100%">
+```
+
+이미지가 위치한 경로를 계산해서 static 경로를 지정해줍니다.
+
+```
+app.use(express.static('.')); // 현재 경로
+// app.use(express.static('./public')); //public폴더
+```
+
+그러면 정상적으로 이미지가 노출되는 것을 확인할 수 있습니다.
+
+```
+var fs = require('fs');
+var url = require('url');
+var express = require('express');
+var app = express();
+
+app.use(express.static('.'));
+app.get('/', function (request, response) {
+    var _url = request.url;
+    var title = request.query.id;
+    if(_url == '/'){
+        title = 'Welcome';
+    }
+    if(_url == '/favicon.ico'){
+      return response.writeHead(404);
+    }
+
+    response.writeHead(200);
+    fs.readFile(`data/${title}`, 'utf8', function(err, description){
+      var template = `
+      <!doctype html>
+      <html>
+      <head>
+        <title>WEB1 - ${title}</title>
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <h1><a href="/">WEB</a></h1>
+        <ul>
+          <li><a href="/?id=HTML">HTML</a></li>
+          <li><a href="/?id=CSS">CSS</a></li>
+          <li><a href="/?id=JavaScript">JavaScript</a></li>
+        </ul>
+        <h2>${title}</h2>
+        <p>${description}</p>
+      </body>
+      </html>
+      `;
+      response.end(template);
+    })
+});
+
+app.listen(3000);
+```

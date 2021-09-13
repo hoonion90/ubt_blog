@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "FS.READDIR & FS.READDIRSYNC 동기방식(SYNCRONOUS)과 비동기방식(ASYNCHRONOUS)"
+date:   2021-07-19 10:25:41 +0900
+categories: lowdb
+---
+
+## fs.readdir과 fs.readdirSync
+
+fs.readdir의 경우 비동기 방식으로 보다 빠르게 처리하고 callback으로 처리가 가능하다.
+
+```
+fs.readdir('./data', function(error, filelist){
+  for(var i in filelist){
+    console.log(filelist[i]);
+  }
+});
+```
+
+fs.readdirSync 사용 시 동기방식으로 처리할 수 있다.
+
+```
+let filelist = fs.readdirSync('./data');
+for(var i in filelist){
+  console.log(filelist[i]);
+}
+```
+
+## 동기방식(Syncronous)과 비동기방식(Asynchronous)
+
+동기방식은 결과가 주어질 때까지 아무것도 못하고 대기해야 하는 단점이 있지만 설계가 간단하고 직관적이다.
+
+비동기방식은 동기보다 복잡하지만 결과가 주어지는데 시간이 걸리더라도 그 시간 동안 다른 작업을 할 수 있으므로 자원을 효율적으로 사용할 수 있는 장점이 있습니다.
+
+## 자바스크립트
+
+참조 : [https://velog.io/@jiwon/Javascript%EB%8A%94-%EB%8F%99%EA%B8%B0%EC%9D%BC%EA%B9%8C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%9D%BC%EA%B9%8C](https://velog.io/@jiwon/Javascript%EB%8A%94-%EB%8F%99%EA%B8%B0%EC%9D%BC%EA%B9%8C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%9D%BC%EA%B9%8C)
+
+자바스크립트는 동기적이고, blocking이며, single-threaded한 언어입니다. 하지만, 이것은 오직 한 연산에서의 특성을 의미하며, 모든 것에서의 특성을 의미하지 않습니다.
+
+만약에, 데이터베이스로부터 많은 양의 데이터를 가져오는 요청을 해야 한다면, 어떻게 해야 할까요? 예를 들어, PG와 PostgreSQL가 데이터를 가져오는 동안 우리는 기다리고 싶지 않습니다. JavaScript 개발자들은 이러한 문제를 위한 해결책을 제시했습니다.
+
+사람들이 JavaScript가 비동기 언어라고 흔히 오해하는 이유는, 우리는Javascript가 비동기식으로 동작하도록 조작할 수 있기 때문입니다.

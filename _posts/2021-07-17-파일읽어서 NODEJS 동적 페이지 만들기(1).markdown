@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "파일읽어서 NODEJS 동적 페이지 만들기(1)"
+date:   2021-07-17 12:25:41 +0900
+categories: nodejs
+---
+
+## 다음 글 링크
+
+### [node.js 파일 읽기 / 동적 페이지 만들기(2)](https://fehoon.tistory.com/162)
+
+## node.js 파일 읽기 / 동적 페이지 만들기
+
+> localhost:3000/?id='HTML', localhost:3000/?id='Javascript', localhost:3000/?id='CSS'
+
+node.js로 parameter를(id) 받고 해당 파라미터에 따라 data폴더에 만들어 놓은 HTML.txt, javascript.txt, css.txt를 읽어드려서 뿌려주는 학습 프로젝트. (생활코딩 내용 학습 중) 다음과 같이 쿼리스트링 값을 추출 가능하다.
+
+```
+var url = require('url');
+
+var app = http.createServer(function(request,response){
+    var _url = request.url;
+    var queryData = url.parse(_url, true).query;
+    var title = queryData.id;
+```
+
+다음과 같이 fs 모듈을 선언해주고. 경로를 `data/${queryData.id}` 적어서 파일을 읽어온다.
+
+```
+var fs = require('fs');
+
+
+fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description){
+```
+
+전체 코드
+
+```
+var http = require('http');
+var fs = require('fs');
+var url = require('url');
+
+var app = http.createServer(function(request,response){
+    var _url = request.url;
+    var queryData = url.parse(_url, true).query;
+    var title = queryData.id;
+    if(_url == '/'){
+      title = 'Welcome';
+    }
+    if(_url == '/favicon.ico'){
+      return response.writeHead(404);
+    }
+    response.writeHead(200);
+    fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description){
+      var template = `
+      <!doctype html>
+      <html>
+      <head>
+        <title>WEB1 - ${title}</title>
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <h1><a href="/">WEB</a></h1>
+        <ul>
+          <li><a href="/?id=HTML">HTML</a></li>
+          <li><a href="/?id=CSS">CSS</a></li>
+          <li><a href="/?id=JavaScript">JavaScript</a></li>
+        </ul>
+        <h2>${title}</h2>
+        <p>${description}</p>
+        <img src="coding.jpg" width="100%">
+      </body>
+      </html>
+      `;
+      response.end(template);
+    })
+ });
+app.listen(3000);
+```
