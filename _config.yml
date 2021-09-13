@@ -20,17 +20,18 @@
 
 title: watu.me
 email: watume32@gmail.com
-description: >- 
-        방문해주셔서 감사합니다.🥰😘
-        일러스트 이미지 보내주시는 착한 일러스트레이터 분이 계시면 연락주시면 감사하겠습니다. 
-       #>- # this means to ignore newlines until "baseurl:"
+description: >-
+        방문해주셔서 감사합니다.🥰
+        일러스트 이미지 보내주시는 착한 일러스트레이터 분이 계시면 연락주시면 감사하겠습니다.  
+#>- # this means to ignore newlines until "baseurl:"
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com 
+url: "http://www.watu.me" # the base hostname & protocol for your site, e.g. http://example.com 
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.

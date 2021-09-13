@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ubuntu에서 jekyll 돌리기"
-date:   2021-09-12 10:29:13 +0900
+date:   2021-06-28 10:29:13 +0900
 categories: jekyll
 ---
 
