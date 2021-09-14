@@ -3,12 +3,16 @@ layout: post
 title:  "지킬(jekyll) 사이트맵(sitemap.xml) 만들기"
 date:   2021-07-02 12:25:41 +0900
 categories: jekyll
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## jekyll-sitemap
 
 구글 콘솔에 등록할 지킬(jekyll)의 사이트맵(sitemap)을 만들어보자.
 먼저 gem install을 수행해준다.
+
+<!--more-->
 
 ```
 $ gem install jekyll-sitemap

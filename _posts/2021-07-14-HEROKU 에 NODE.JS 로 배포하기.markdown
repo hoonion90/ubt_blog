@@ -3,15 +3,20 @@ layout: post
 title:  "HEROKU 에 NODE.JS 로 배포하기"
 date:   2021-07-14 18:24:41 +0900
 categories: server
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## HEROKU(헤로쿠,히로쿠)란?
 
 헤로쿠 주식회사는 웹 애플리케이션 배치 모델로 사용되는 여러 프로그래밍 언어를 지원하는 클라우드 PaaS이다
 
+<!--more-->
+
 > Paas = Platform as a Service 서비스 단위로 제공하는 클라우드 컴퓨팅 서비스
 
 ruby, python, java, nodejs, php, go 등 다양한 언어로 배포가 가능하다.
+
 
 ## HEROKU 설치
 

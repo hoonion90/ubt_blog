@@ -3,12 +3,16 @@ layout: post
 title:  "서버리스(SERVERLESS)는 서버가 없는 것인가"
 date:   2021-07-05 02:35:14 +0900
 categories: server
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 # WHAT IS SERVERLESS ?
 
 -   오늘은 서버리스 개념에 대해 공부한 내용을 정리해봤다.
 -   서버리스는 서버가 없이 돌아가는 것을 말할까?
+
+<!--more-->
 
 ### 결론부터 말하면 서버리스는 서버가 없는 것을 의미하지 않는다.
 

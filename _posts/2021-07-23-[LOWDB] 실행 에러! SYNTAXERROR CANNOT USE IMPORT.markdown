@@ -3,12 +3,16 @@ layout: post
 title:  "[LOWDB] 실행 에러?! SYNTAXERROR: CANNOT USE IMPORT"
 date:   2021-07-23 19:37:41 +0900
 categories: lowdb
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## SyntaxError: Cannot use import statement outside a module
 
 아래와 같은 에러가 발생한다면... 정답은 바로 Warning에 표시됩니다.  
 To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+
+<!--more-->
 
 ```
 $ node index.js

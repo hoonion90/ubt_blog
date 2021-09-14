@@ -3,17 +3,17 @@ layout: post
 title:  "파일읽어서 NODEJS 동적 페이지 만들기(1)"
 date:   2021-07-17 12:25:41 +0900
 categories: nodejs
+excerpt_separator: <!--more-->
+preview: y
 ---
-
-## 다음 글 링크
-
-### [node.js 파일 읽기 / 동적 페이지 만들기(2)](https://fehoon.tistory.com/162)
 
 ## node.js 파일 읽기 / 동적 페이지 만들기
 
 > localhost:3000/?id='HTML', localhost:3000/?id='Javascript', localhost:3000/?id='CSS'
 
 node.js로 parameter를(id) 받고 해당 파라미터에 따라 data폴더에 만들어 놓은 HTML.txt, javascript.txt, css.txt를 읽어드려서 뿌려주는 학습 프로젝트. (생활코딩 내용 학습 중) 다음과 같이 쿼리스트링 값을 추출 가능하다.
+
+<!--more-->
 
 ```
 var url = require('url');
@@ -77,3 +77,7 @@ var app = http.createServer(function(request,response){
  });
 app.listen(3000);
 ```
+
+## 다음 글 링크
+
+### [node.js 파일 읽기 / 동적 페이지 만들기(2)](https://fehoon.tistory.com/162)

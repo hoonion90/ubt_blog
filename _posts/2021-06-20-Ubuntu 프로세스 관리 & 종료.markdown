@@ -3,6 +3,8 @@ layout: post
 title:  "Ubuntu 프로세스 관리 & 종료"
 date:   2021-06-20 23:31:15 +0900
 categories: linux
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## [프로세스 목록 보기 : ps]
@@ -20,7 +22,7 @@ $ps
 - 출력정보 TIME : 해당 프로세스가 사용한 CPU 시간의 양
 
 - 출력정보 CMD : 프로세스가 실행 중인 명령
-
+<!--more-->
  
 ```
 $ps au 

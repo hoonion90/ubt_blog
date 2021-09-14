@@ -3,11 +3,15 @@ layout: post
 title:  "FS.READDIR & FS.READDIRSYNC 동기방식(SYNCRONOUS)과 비동기방식(ASYNCHRONOUS)"
 date:   2021-07-19 10:25:41 +0900
 categories: lowdb
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## fs.readdir과 fs.readdirSync
 
 fs.readdir의 경우 비동기 방식으로 보다 빠르게 처리하고 callback으로 처리가 가능하다.
+
+<!--more-->
 
 ```
 fs.readdir('./data', function(error, filelist){

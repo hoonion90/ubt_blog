@@ -3,6 +3,8 @@ layout: post
 title:  "[LOWDB] JSON을 DB로 활용하는 방법"
 date:   2021-07-12 13:05:11 +0900
 categories: lowdb
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 비용을 들이지 않고 요즘 좋은 서비스들이 많아서 활용하여, 웹서비스를 개발해보려고 하였다.
@@ -10,6 +12,8 @@ categories: lowdb
 웹서비스가 DB가 필요해서 json을 db로 활용하는 방법을 찾다가.. lowdb라는 것을 발견하였고 이를 활용하여
 
 HEROKU와 node.js를 사용하여 기획한 웹 서비스를 개발해보려고 한다.
+
+<!--more-->
 
 ## 먼저 node.js를 설치한다.
 

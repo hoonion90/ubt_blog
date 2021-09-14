@@ -3,17 +3,17 @@ layout: post
 title:  "NODE.JS 파일 읽기&동적 페이지 만들기(2) EXPRESS.JS 란 그리고 설치"
 date:   2021-07-18 12:05:41 +0900
 categories: nodejs
+excerpt_separator: <!--more-->
+preview: y
 ---
-
-## 이전 글 링크
-
-### [node.js 파일 읽기 / 동적 페이지 만들기(1)](https://fehoon.tistory.com/161)
 
 ## express.js 란?
 
 Express.js, 또는 간단히 익스프레스는 Node.js를 위한 웹 프레임워크의 하나로, MIT 허가서로 라이선스되는 자유-오픈 소스 소프트웨어로 출시되었다. 웹 애플리케이션, API 개발을 위해 설계되었다. Node.js의 사실상의 표준 서버 프레임워크로 불리고 있다.
 
 간단하게 node.js의 표준 서버 프레임워크로 이해하고 넘어가면 될 것 같다.
+
+<!--more-->
 
 ## express.js 설치
 
@@ -119,3 +119,7 @@ app.get('/', function (request, response) {
 
 app.listen(3000);
 ```
+
+## 이전 글 링크
+
+### [node.js 파일 읽기 / 동적 페이지 만들기(1)](https://fehoon.tistory.com/161)

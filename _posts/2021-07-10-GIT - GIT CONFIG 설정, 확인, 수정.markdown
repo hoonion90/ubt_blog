@@ -3,18 +3,19 @@ layout: post
 title:  "GIT - GIT CONFIG 설정, 확인, 수정"
 date:   2021-07-10 14:13:41 +0900
 categories: git
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## git config 확인하기
 
-```
 아래 명령어 중 하나로 간단하게 확인이 가능.
-```
 
 ```
 $git config --list 
 $git config -l
 ```
+<!--more-->
 
 RESULT
 

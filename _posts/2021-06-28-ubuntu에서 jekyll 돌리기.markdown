@@ -3,6 +3,8 @@ layout: post
 title:  "ubuntu에서 jekyll 돌리기"
 date:   2021-06-28 10:29:13 +0900
 categories: jekyll
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## ubuntu Jekyll 을 설치하기
@@ -15,6 +17,8 @@ $ sudo apt-get install ruby-full build-essential zlib1g-dev
 
 루트 사용자로 루비 젬을 설치하는 것은 피하는게 좋습니다. 
 따라서, 일반 사용자 계정에 젬 설치 디렉토리를 설정할 필요가 있습니다. 
+
+<!--more-->
 
 ## 환경변수 등록하기
 

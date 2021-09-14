@@ -3,11 +3,15 @@ layout: post
 title:  "[LOWDB] 기존 값 + 1(INCREASE BY 1) UPDATE"
 date:   2021-08-08 21:04:23 +0900
 categories: lowdb
+excerpt_separator: <!--more-->
+preview: y
 ---
 
 ## lowdb의 업데이트(lodash 활용)
 
 assign 외에 update를 사용하여 기존 값을 연산하여 처리 가능하다.
+
+<!--more-->
 
 ```
 _.update(object, path, updater)
