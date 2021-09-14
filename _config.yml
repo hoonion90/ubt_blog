@@ -31,8 +31,10 @@ url: "http://www.watu.me" # the base hostname & protocol for your site, e.g. htt
 # Build settings
 theme: minima
 # Build settings
+
 #markdown: CommonMarkGhPages
 markdown: kramdown
+# markdown: kramdown
 highlighter: rouge
 commonmark:
   options: ["SMART", "FOOTNOTES"]
