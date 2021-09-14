@@ -4,6 +4,7 @@ title:  "Git pull 충돌 처리"
 date:   2021-06-10 11:25:12 +0900
 categories: git
 excerpt_separator: <!--more-->
+preview: y
 ---
 
 git pull 충돌로 안될 때 적절한 조치방법 및 강제 pull 방법을 알아보는 시간.
