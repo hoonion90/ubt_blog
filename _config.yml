@@ -30,6 +30,15 @@ url: "http://www.watu.me" # the base hostname & protocol for your site, e.g. htt
 
 # Build settings
 theme: minima
+# Build settings
+#markdown: CommonMarkGhPages
+markdown: kramdown
+highlighter: rouge
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink"]
+kramdown:
+  parse_block_html: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -53,3 +62,4 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
