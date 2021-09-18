@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "카운트(count)/카운팅 애니메이션 넣기"
+date:   2021-09-18 16:39:13 +0900
+categories: javascript
+excerpt_separator: <!--more-->
+preview: y
+---
+
+정말 세상에는 고수가 많고 점점 잘 검색해서 이해하고 잘 사용하는 것이 중요해지는 시대가 되는 것 같다.
+오늘은 카운트가 따라라락 올라가는 애니메이션 효과를 넣어보았다.
+<!--more-->
+
+### javascript function numberCounter !!
+
+아래 스크립트를 스크립트 태그안에 넣어준다.
+
+``` javascript
+<script>
+function numberCounter(target_frame, target_number) {
+    this.count = 0; this.diff = 0;
+    this.target_count = parseInt(target_number);
+    this.target_frame = document.getElementById(target_frame);
+    this.timer = null;
+    this.counter();
+};
+    numberCounter.prototype.counter = function() {
+        var self = this;
+        this.diff = this.target_count - this.count;
+    
+        if(this.diff > 0) {
+            self.count += Math.ceil(this.diff / 5);
+        }
+    
+        this.target_frame.innerHTML = this.count.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    
+        if(this.count < this.target_count) {
+            this.timer = setTimeout(function() { self.counter(); }, 20);
+        } else {
+            clearTimeout(this.timer);
+        }
+    };
+</script>
+```
+
+
+### html 테스트 세팅
+
+예시입니다.
+
+``` html
+<p id="counter1"></p>
+<p id="counter2"></p>
+<p id="counter3"></p>
+```
+
+### 실행
+
+다음과 같이 생성해주면 된다. 
+아래는 테스트 입니다.
+
+``` javascript
+new numberCounter("counter3", 99999);
+new numberCounter("counter2", 1123456);
+new numberCounter("counter1", 15);
+```
+
+\- 확인
+
+> http://jsfiddle.net/rootbox/uL4J3/
