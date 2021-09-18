@@ -7,7 +7,7 @@ categories: javascript
 
 ## JavaScript(js) 숫자 가격 표시 천단위 콤마(javascript(js) thousand separator)
 
-```
+``` javascript
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -15,7 +15,7 @@ function numberWithCommas(x) {
 
 ### TEST
 
-```
+``` javascript
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }

@@ -14,7 +14,7 @@ To load an ES module, set "type": "module" in the package.json or use the .mjs e
 
 <!--more-->
 
-```
+``` bash
 $ node index.js
 (node:2484) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
 (Use `node --trace-warnings ...` to show where the warning was created)
@@ -29,11 +29,11 @@ SyntaxError: Cannot use import statement outside a module
 
 원인은 아래에 설명하겠습니다.
 
-```
+``` bash
 $node index.js
 ```
 
-```
+``` bash
 $node index.mjs
 ```
 
@@ -41,7 +41,7 @@ $node index.mjs
 
 -   "type" : "module" 을 추가해줍니다.
 
-```
+``` json
 {
   "name": "std_lowdb",
   "version": "1.0.0",

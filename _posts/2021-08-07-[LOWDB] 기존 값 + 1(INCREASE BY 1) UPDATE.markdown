@@ -35,7 +35,7 @@ return
 
 ### EXAMPLE
 
-```
+``` javascript
 var object = { 'a': [{ 'b': { 'c': 3 } }] };
 
 _.update(object, 'a[0].b.c', function(n) { return n * n; });
@@ -51,14 +51,14 @@ console.log(object.x[0].y.z);
 
 You may want to try [https://lodash.com/docs/4.17.4#update](https://lodash.com/docs/4.17.4#update)
 
-```
+``` javascript
 db.update('count', n => n + 1)
   .write()
 ```
 
 You can also use set, if you need to set a particular value:
 
-```
+``` javascript
 db.set('count', someValue)
   .write()
 ```

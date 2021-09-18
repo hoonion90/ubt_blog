@@ -7,7 +7,7 @@ categories: javascript
 
 ## 변수 값 중 최대값, 최소값 구하기
 
-```
+``` javascript
 let a = 11;
 let b = 12;
 let c = 10;
@@ -25,7 +25,7 @@ result
 
 ## 배열에서 최대값 구하기
 
-```
+``` javascript
 let arr = ['11','12','10'];
 
 console.log(Math.max.apply(null, arr));
