@@ -19,7 +19,7 @@ HEROKU와 node.js를 사용하여 기획한 웹 서비스를 개발해보려고 
 
 > [https://nodejs.org/ko/download/](https://nodejs.org/ko/download/)
 
-[##_Image|kage@bB5ScS/btrbIIN4baK/7ojmlk42rbeKmL8ETJRok0/img.png|alignCenter|width="100%" data-origin-width="1040" data-origin-height="396" data-ke-mobilestyle="widthOrigin"|||_##]
+![]("https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbB5ScS%2FbtrbIIN4baK%2F7ojmlk42rbeKmL8ETJRok0%2Fimg.png")
 
 본인의 OS에 맞는 node.js를 먼저 다운로드하여 설치한다.  
 약관동의 후 NEXT..NEXT..
