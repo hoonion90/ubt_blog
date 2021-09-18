@@ -30,7 +30,7 @@ ruby, python, java, nodejs, php, go 등 다양한 언어로 배포가 가능하�
 
 ## HEROKU 배포 준비
 
-[##_Image|kage@Gy4YV/btrbIHu3ZHE/jr4wpUUdGNtZDi5Mzi0fw1/img.png|alignCenter|width="100%" data-origin-width="1388" data-origin-height="276" data-ke-mobilestyle="widthOrigin"|||_##]
+![](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGy4YV%2FbtrbIHu3ZHE%2Fjr4wpUUdGNtZDi5Mzi0fw1%2Fimg.png)
 
 create new app으로 앱을 생성해줍니다.  
 커맨드창(cmd, bash 등)을 실행시켜 줍니다. 그리고 헤로쿠에 로그인해줍니다.
