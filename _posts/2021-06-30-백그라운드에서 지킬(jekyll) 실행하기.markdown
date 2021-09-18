@@ -14,19 +14,19 @@ preview: y
 
 <!--more-->
 
-```
+``` bash
 $ jekyll serve
 ```
 
 ##백그라운드에서 수행
 
-```
+``` bash
 $ jekyll serve > /dev/null 2>&1 &
 ```
 
 add incremental which builds only deltas
 
-```
+``` bash
 $ jekyll serve --incremental > /dev/null 2>&1 &
 ```
 
@@ -34,12 +34,12 @@ $ jekyll serve --incremental > /dev/null 2>&1 &
 
 find jekyll server process
 
-```
+``` bash
 $ ps -ef | grep jekyll
 ```
 
 강제 종료 시킵니다.
 
-```
+``` bash
 $ kill -9 pid#
 ```

@@ -11,7 +11,7 @@ preview: y
 
 Jekyll 을 설치하기 전, 필요한 모든 의존요소를 가지고 있는지 확인해야 합니다.
 
-```
+``` bash
 $ sudo apt-get install ruby-full build-essential zlib1g-dev
 ```
 
@@ -24,7 +24,7 @@ $ sudo apt-get install ruby-full build-essential zlib1g-dev
 
 다음 명령어들은 젬 설치 경로를 설정하는 환경설정 변수들을 ~/.bashrc 파일에 추가할 것입니다. 다음과 같이 실행하세요:
 
-```
+``` bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
 echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
@@ -33,29 +33,29 @@ source ~/.bashrc
 
 ## 마지막으로, Jekyll 을 설치합니다
 
-```
+``` bash
 $ gem install jekyll bundler
 ```
 
 ## jekyll을 설치할 경로로 이동하여 새 블로그 생성하기
 
-```
+``` bash
 $ cd workspace
 ```
 
 저는 workspace 안에 myblog로 생성해주겠습니다.
 
-```
+``` bash
 $ jekyll new myblog
 ```
 
-```
+``` bash
 $ cd myblog
 ```
 
 build 해서 로컬 서버에서 사용할 수 있도록 합니다.
 
-```
+``` bash
 bundle exec jekyll serve
 ```
 

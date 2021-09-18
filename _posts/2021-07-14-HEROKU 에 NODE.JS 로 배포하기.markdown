@@ -35,13 +35,13 @@ ruby, python, java, nodejs, php, go 등 다양한 언어로 배포가 가능하�
 create new app으로 앱을 생성해줍니다.  
 커맨드창(cmd, bash 등)을 실행시켜 줍니다. 그리고 헤로쿠에 로그인해줍니다.
 
-```
+``` bash
 $ heroku login
 ```
 
 자신의 프로젝트 경로로 이동하여 init, 후 remote 설정해줍니다.
 
-```
+``` bash
 $ cd my-project/
 $ git init
 $ heroku git:remote -a calm-oasis-26857
@@ -49,7 +49,7 @@ $ heroku git:remote -a calm-oasis-26857
 
 주의할 점 node.js로 서비스할 경우 배포 전에 package.json 을 생성해주어야 합니다.
 
-```
+``` bash
 $npm init
 ```
 
@@ -57,7 +57,7 @@ $npm init
 
 스태이징 처리, 커밋 처리하고 push 해주면 자동으로 배포가 됩니다.
 
-```
+``` bash
 $ git add .
 $ git commit -am "make it better"
 $ git push heroku master

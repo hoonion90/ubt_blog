@@ -14,13 +14,13 @@ preview: y
 
 <!--more-->
 
-```
+``` bash
 $ gem install jekyll-sitemap
 ```
 
 ## Gemfile 편집
 
-```
+``` bash
 $ vi Gemfile
 ```
 
@@ -31,25 +31,25 @@ $ vi Gemfile
 
 도메인을 등록하여 사용 중이라면 반드시 url을 수정해준다.
 
-```
+``` bash
 $ vi _config.yml
 ```
 
 저는 아래처럼 baseurl을 사용 중 입니다.
 그리고 url을 반드시 사용하는 도메인으로 설정해줍니다.
 
-```
+``` conf
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://www.watu.me" # the base hostname & protocol for your site, e.g. http://example.com
 ```
 
 ## jekyll 실행
 
-```
+``` bash
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
-```
+``` bash
 JEKYLL_ENV=production bundle exec jekyll serve
 ```
 

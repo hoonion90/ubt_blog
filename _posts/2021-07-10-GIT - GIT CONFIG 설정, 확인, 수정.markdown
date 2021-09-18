@@ -11,7 +11,7 @@ preview: y
 
 아래 명령어 중 하나로 간단하게 확인이 가능.
 
-```
+``` bash
 $git config --list 
 $git config -l
 ```
@@ -19,7 +19,7 @@ $git config -l
 
 RESULT
 
-```
+``` bash
 $git config --list
 diff.astextplain.textconv=astextplain
 filter.lfs.clean=git-lfs clean -- %f
@@ -41,7 +41,7 @@ init.defaultbranch=master
 
 가장 많이 설정하는 username, useremail 설정을 하려면
 
-```
+``` bash
 $git config --global user.name "fehoon"
 $git config --global user.email "이메일@도메인.com"
 ```
@@ -50,7 +50,7 @@ $git config --global user.email "이메일@도메인.com"
 
 설정한 config를 삭제하려면 --unset 옵션을 준다.
 
-```
+``` bash
 $git config --unset --global user.name "fehoon"
 $git config --unset --global user.email "이메일@도메인.com"
 ```

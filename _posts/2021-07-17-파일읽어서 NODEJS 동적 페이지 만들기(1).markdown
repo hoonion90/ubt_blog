@@ -15,7 +15,7 @@ node.js로 parameter를(id) 받고 해당 파라미터에 따라 data폴더에 �
 
 <!--more-->
 
-```
+``` javascript
 var url = require('url');
 
 var app = http.createServer(function(request,response){
@@ -26,7 +26,7 @@ var app = http.createServer(function(request,response){
 
 다음과 같이 fs 모듈을 선언해주고. 경로를 `data/${queryData.id}` 적어서 파일을 읽어온다.
 
-```
+``` javascript
 var fs = require('fs');
 
 
@@ -35,7 +35,7 @@ fs.readFile(`data/${queryData.id}`, 'utf8', function(err, description){
 
 전체 코드
 
-```
+``` javascript
 var http = require('http');
 var fs = require('fs');
 var url = require('url');

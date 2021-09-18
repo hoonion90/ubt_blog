@@ -21,13 +21,13 @@ Express.js, 또는 간단히 익스프레스는 Node.js를 위한 웹 프레임�
 
 nodejs가 설치가 되어 있으면 아래 커맨드로 설치 가능.
 
-```
+``` bash
 $ npm install express --save
 ```
 
 > Express를 임시로 설치하고 종속 항목 목록에 추가하지 않으려면, 다음과 같이 --save 옵션을 생략하십시오.
 
-```
+``` bash
 $ npm install express
 ```
 
@@ -39,7 +39,7 @@ $ npm install express
 
 ### nodejs(전)
 
-```
+``` javascript
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
@@ -50,7 +50,7 @@ var app = http.createServer(function(request,response){
 
 ### express.js(후)
 
-```
+``` javascript
 var express = require('express');
 var app = express();
 
@@ -62,20 +62,20 @@ app.get('/', function (request, response) {
 
 아래 이미지의 경로를 찾지 못해서 이미지가 표시되지 않는다면 아래 방법을 적용합니다.
 
-```
+``` html
 <img src="coding.jpg" width="100%">
 ```
 
 이미지가 위치한 경로를 계산해서 static 경로를 지정해줍니다.
 
-```
+``` javascript
 app.use(express.static('.')); // 현재 경로
 // app.use(express.static('./public')); //public폴더
 ```
 
 그러면 정상적으로 이미지가 노출되는 것을 확인할 수 있습니다.
 
-```
+``` javascript
 var fs = require('fs');
 var url = require('url');
 var express = require('express');

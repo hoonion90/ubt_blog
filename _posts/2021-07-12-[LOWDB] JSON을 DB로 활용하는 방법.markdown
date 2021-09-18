@@ -32,13 +32,13 @@ lowdb를 설치하고 사용하기 전에 먼저 경로를 생성해주자.
 ex> \\workspace\\project01\\  
 콘솔창 (bash나 cmd)을 실행시켜서 해당 경로로 이동하여 npm install lowdb를 입력한다.
 
-```
+``` bash
 $npm install lowdb
 ```
 
 정상적으로 설치가 되면 main.mjs 파일을 하나 생성하여 아래의 코드를 넣어주자.
 
-```
+``` javascript
 import { join, dirname } from 'path'
 import { Low, JSONFile } from 'lowdb'
 import { fileURLToPath } from 'url'
@@ -72,13 +72,13 @@ await db.write()
 
 파일을 저장하고 콘솔창을 실행시켜서 node main.mjs 를 입력한다.
 
-```
+``` bash
 $ node main.mjs
 ```
 
 경로에 db.json으로 다음과 같이 파일이 생성되면 정상적으로 완료가 된 것이다.
 
-```
+``` json
 {
   "posts": [
     "hello world"

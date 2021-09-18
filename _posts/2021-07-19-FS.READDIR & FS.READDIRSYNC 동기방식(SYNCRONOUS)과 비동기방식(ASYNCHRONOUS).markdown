@@ -13,7 +13,7 @@ fs.readdir의 경우 비동기 방식으로 보다 빠르게 처리하고 callba
 
 <!--more-->
 
-```
+``` javascript
 fs.readdir('./data', function(error, filelist){
   for(var i in filelist){
     console.log(filelist[i]);
@@ -23,7 +23,7 @@ fs.readdir('./data', function(error, filelist){
 
 fs.readdirSync 사용 시 동기방식으로 처리할 수 있다.
 
-```
+``` javascript
 let filelist = fs.readdirSync('./data');
 for(var i in filelist){
   console.log(filelist[i]);
