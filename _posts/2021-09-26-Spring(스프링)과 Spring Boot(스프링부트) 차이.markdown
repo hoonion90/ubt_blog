@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 preview: y
 ---
 
-# Spring과 Spring boot
+## Spring과 Spring boot
 스프링과 스프링부트의 차이점이 뭘까 ?
 Spring은 Spring Framework를 가르킨다 둘 사이의 차이점에대해서 정리해보자
 <!--more-->
