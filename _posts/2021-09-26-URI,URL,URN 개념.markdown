@@ -12,7 +12,7 @@ preview: y
 클라이언트로부터 요청받은 URL과 VIEW를 매칭시켜주는 것
 사전적인 의미 그대로 특정한 URL에 대해 특정한 뷰로 연결 시켜주는 역할.
 
-excerpt_separator: <!--more-->
+<!--more-->
 
 ## URL과 URI 그리고 URN
 
