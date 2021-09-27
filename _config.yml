@@ -31,8 +31,7 @@ url: "http://www.watu.me" # the base hostname & protocol for your site, e.g. htt
 # Build settings
 theme: minima
 # Build settings
-paginate: 5
-paginate_path: "/page:num/"
+
 excerpt_separator: <!--more-->
 #markdown: CommonMarkGhPages
 markdown: kramdown
@@ -46,7 +45,6 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default.
