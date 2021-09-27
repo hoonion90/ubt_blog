@@ -13,6 +13,7 @@ Spring은 Spring Framework를 가르킨다 둘 사이의 차이점에대해서 �
 <!--more-->
 
 ## Spring (Spring Framework)
+![](https://docs.spring.io/spring-framework/docs/4.0.x/spring-framework-reference/html/images/spring-overview.png)
 - 스프링 프레임워크를 간단하게 스프링(spring)이라고도 부른다.
 - 대한민국 공공기관의 웹 서비스 개발 시 사용을 권장하는 전자정부 표준프레임워크의 기반 기술로 쓰임.
 - 경량 컨테이너
@@ -20,7 +21,12 @@ Spring은 Spring Framework를 가르킨다 둘 사이의 차이점에대해서 �
 - Di(Dependency Injection: 의존성 주입) 
 - AOP(Aspect-Oriented Programming: 관점지향 프로그래밍)
 
+
 ## Spring Boot
+![](http://blog.springsource.org/wp-content/uploads/2013/08/spring.png)
+Spring Boot 는 실제로 Spring 프레임워크에 빠른 앱 개발을 제공하기 위해 구축되었습니다 .
+Spring Boot 는 Pivotal 팀에서 개발했으며 단순 및 웹 기반 애플리케이션을 모두 설정, 구성 및 실행하는 더 쉽고 빠른 방법을 제공하므로 build stand-alone 및 production ready 스프링 애플리케이션을 구축하는 데 사용됩니다.
+
 - 스프링 프레임워크는 기능이 많고 환경설정이 복잡하다. 이에 어려움을 느끼는 사용자들을 위해 나온 것이 스프링 부트이다.
 - 스프링 프레임워크를 사용하기 위한 설정의 많은 부분들이 자동화 되어 사용자가 편리하게 활용할 수 있도록 돕는다.
 - 스프링부트 starter dependency만 추가하면 바로 API 정의, Tomcat 또는 jetty로 웹 애플리케이션 서버를 실행할 수 있다.
