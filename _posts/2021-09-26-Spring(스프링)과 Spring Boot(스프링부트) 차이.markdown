@@ -24,6 +24,7 @@ Spring은 Spring Framework를 가르킨다 둘 사이의 차이점에대해서 �
 
 ## Spring Boot
 ![](http://blog.springsource.org/wp-content/uploads/2013/08/spring.png)
+
 Spring Boot 는 실제로 Spring 프레임워크에 빠른 앱 개발을 제공하기 위해 구축되었습니다 .
 Spring Boot 는 Pivotal 팀에서 개발했으며 단순 및 웹 기반 애플리케이션을 모두 설정, 구성 및 실행하는 더 쉽고 빠른 방법을 제공하므로 build stand-alone 및 production ready 스프링 애플리케이션을 구축하는 데 사용됩니다.
 
