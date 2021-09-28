@@ -30,11 +30,11 @@ ___
 
 - 설치 -> 무료 City 버전 지금 설치하기를 클릭합니다.
 
-![](https://www.watu.me/img/blog/2021/20210929_005555.png)
+![](http://www.watu.me/img/blog/2021/20210929_005555.png)
 
 - 아래 코드를 적용할 사이트에 적당한 위치에 COPY 하여 넣어줍니다.
 
-![](https://www.watu.me/img/blog/2021/20210929_010024.png)
+![](http://www.watu.me/img/blog/2021/20210929_010024.png)
 
 그러면 설치는 끝이 납니다.
 
