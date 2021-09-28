@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "라이브리(LiveRe) 소셜 댓글 설치"
+date:   2021-09-29 00:51:34 +0900
+categories: Tool
+excerpt_separator: <!--more-->
+preview: y
+---
+
+## 라이브리(LiveRe) 란?
+
+SNS 로그인으로 회원가입 절차가 사라집니다.
+방문자의 참여와 소통을 향상시킵니다.
+내가 작성한 댓글을 삭제/관리할 수 있습니다.
+댓글 관리와 콘텐츠 반응을 살펴볼 수 있는 관리자 페이지를 제공합니다.
+
+<!--more-->
+![](https://livere.com/img/icon/main/img_lr_device.png)
+
+대기업, 언론사, 공공기관 등 많은 기업들이 라이브리를 사용하고 있는 것을 볼 수 있습니다.
+
+> https://livere.com/partners
+
+___
+
+## 라이브리(LiveRe) 설치
+
+먼저 아래의 경로로 이동하여 라이브리에 회원 가입을 진행합니다.
+> https://livere.com/
+
+- 설치 -> 무료 City 버전 지금 설치하기를 클릭합니다.
+
+![](https://www.watu.me/img/blog/2021/20210929_005555.png)
+
+- 아래 코드를 적용할 사이트에 적당한 위치에 COPY 하여 넣어줍니다.
+
+![](https://www.watu.me/img/blog/2021/20210929_010024.png)
+
+그러면 설치는 끝이 납니다.
+
+___
+
+## 각 페이지에서 동일한 댓글 노출하기
+
+아래의 경우에 해당하면 다음 방법을 사용하면 됩니다.
+
+- 각 페이지에서 모두 동일한 댓글을 나오게 하고 싶을 때
+- 해당 페이지로 들어오는 경로에 따라 파라미터가 변경되어도 동일한 댓글을 나오게 하고 싶을 때
+- 모바일 페이지 연동 시, 모바일 페이지와 웹 페이지에서 동일한 댓글을 나오게 하고 싶을 때
+
+아래와 같이 refer값을 option으로 동일하게 설정해준다.
+
+``` javascript
+        window.livereOptions = {
+          refer: 'www.watu.com'
+        };
+```
+
+아래와 같은 위치에 이렇게 적용해주면 된다.
+
+``` html
+
+<!-- 라이브리 시티 설치 코드 -->
+      <div id="lv-container" data-id="city" data-uid="*************==">
+        <script type="text/javascript">
+        window.livereOptions = {
+          refer: 'www.watu.com'
+        };
+        (function(d, s) {
+            var j, e = d.getElementsByTagName(s)[0];
+
+            if (typeof LivereTower === 'function') { return; }
+
+            j = d.createElement(s);
+            j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+            j.async = true;
+
+            e.parentNode.insertBefore(j, e);
+        })(document, 'script');
+        </script>
+      </div>
+      <!-- 시티 설치 코드 끝 -->
+
+```
+
+감사합니다.
