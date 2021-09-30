@@ -7,9 +7,14 @@ excerpt_separator: <!--more-->
 preview: y
 ---
 
-## 라우팅 (페이지 라우팅)
+## javascript URI 정보 가져오기
 
-클라이언트로부터 요청받은 URL과 VIEW를 매칭시켜주는 것
-사전적인 의미 그대로 특정한 URL에 대해 특정한 뷰로 연결 시켜주는 역할.
+```
+window.location.href returns the href (URL) of the current page
+window.location.hostname returns the domain name of the web host
+window.location.pathname returns the path and filename of the current page
+window.location.protocol returns the web protocol used (http: or https:)
+window.location.assign() loads a new document
+```
 
 <!--more-->
