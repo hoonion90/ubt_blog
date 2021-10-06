@@ -14,6 +14,7 @@ preview: y
 
 <!--more-->
 
+___
 ### URI 전체 조회하기 
 - input
 
@@ -26,6 +27,8 @@ window.location.href
 ```
 'http://www.watu.me/result?c=class_05'
 ```
+
+___
 
 ### hostname 조회하기
 
@@ -43,6 +46,7 @@ subdomain과 domain 그리고 TLD를 나타낸다. 그래서 다음과 같이 �
 'www.watu.me'
 ```
 
+___
 ### pathname 조회하기
 
 - input
@@ -59,6 +63,7 @@ uri에서 pathname은 도메인 값 뒤의 '/path' 부분을 의미한다. 따�
 '/result'
 ```
 
+___
 ### 프로토콜 조회하기
 
 - input 
@@ -75,6 +80,7 @@ window.location.protocol
 'http:'
 ```
 
+___
 ### +a assign()
 
 - input
