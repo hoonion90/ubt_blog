@@ -9,7 +9,7 @@ preview: y
 
 ## javascript URI 정보 조회하기
 
-먼저 참고하면 좋은 내용
+먼저 참고하면 좋은 내용 ==> 
 [URI, URL, URN 개념](http://www.watu.me/blog/web/2021/09/26/URI,URL,URN-%EA%B0%9C%EB%85%90.html)
 
 <!--more-->
