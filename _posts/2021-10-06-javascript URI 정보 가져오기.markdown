@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "javascript URI 정보 조회하기(가져오기)"
-date:   2021-09-30 23:58:13 +0900
+date:   2021-10-06 23:55:33 +0900
 categories: WEB
 excerpt_separator: <!--more-->
 preview: y
