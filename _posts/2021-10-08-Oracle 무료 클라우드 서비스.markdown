@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Oracle 무료 클라우드 서비스"
+date:   2021-10-08 22:33:24 +0900
+categories: SERVER
+excerpt_separator: <!--more-->
+preview: y
+---
+
+## 오라클 무료 클라우드 서버 생성하기
+
+<!--more-->
