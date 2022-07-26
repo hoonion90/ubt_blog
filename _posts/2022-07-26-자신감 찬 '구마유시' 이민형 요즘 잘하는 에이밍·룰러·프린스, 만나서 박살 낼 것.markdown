@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "자신감 찬 '구마유시' 이민형 요즘 잘하는 에이밍·룰러·프린스, 만나서 박살 낼 것"
-date:   2022-07-26 20:15:33 +0900
+date:   2022-07-26 20:19:33 +0900
 categories: NEWS
 excerpt_separator: <!--more-->
 preview: y
