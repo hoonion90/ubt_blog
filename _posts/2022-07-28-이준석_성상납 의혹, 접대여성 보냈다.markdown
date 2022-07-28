@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "'이준석 성상납' 의혹 기업인 측 접대 여성 보냈다?"
-date:   2022-07-28 20:05:33 +0900
+title:  "'이준석_성상납' 의혹 기업인 측 접대 여성 보냈다?"
+date:   2022-07-28 23:05:33 +0900
 categories: NEWS
 excerpt_separator: <!--more-->
 preview: y
