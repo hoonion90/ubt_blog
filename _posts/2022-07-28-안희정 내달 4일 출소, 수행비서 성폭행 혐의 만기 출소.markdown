@@ -5,6 +5,7 @@ date:   2022-07-28 21:05:33 +0900
 categories: NEWS
 excerpt_separator: <!--more-->
 preview: y
+ogimage: http://www.watu.me/img/blog/2022/20220729_01.jpg
 ---
 
 ![이미지](http://www.watu.me/img/blog/2022/20220729_01.jpg)
