@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 preview: y
 ---
 
-![](http://www.watu.me/img/blog/2022/20220729_01.jpg)
+![이미지](http://www.watu.me/img/blog/2022/20220729_01.jpg)
 
 [스타인뉴스 이광우 기자] 수행비서 성폭행 혐의로 실형을 확정받고 수감 중인 안희정 전 충남도지사가 다음달 4일 만기 출소한다.
 
