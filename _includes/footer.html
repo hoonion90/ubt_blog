@@ -9,14 +9,14 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            {%- if site.author -%}
+            <!-- {%- if site.author -%}
               {{ site.author | escape }}
             {%- else -%}
               {{ site.title | escape }}
-            {%- endif -%}
+            {%- endif -%} -->
             </li>
             {%- if site.email -%}
-            <!-- <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
+            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
@@ -27,8 +27,7 @@
 
       <div class="footer-col footer-col-3">
         <!-- <p>{{- site.description | escape -}}</p> -->
-        <p>좋은 하루 되세요.</p>
-        <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <!-- <p>너에게 난 watume</p> -->
       </div>
     </div>
 
