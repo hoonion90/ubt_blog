@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "8월부터 아파트 완공 직후 층간소음 측정 의무화"
+date:   2022-07-31 23:35:33 +0900
+categories: NEWS
+excerpt_separator: <!--more-->
+preview: y
+image: https://img.seoul.co.kr/img/upload/2016/07/03/SSI_20160703182731_O2.jpg
+---
+
+![](https://img.seoul.co.kr/img/upload/2016/07/03/SSI_20160703182731_O2.jpg)
+
+주택법이 개정되어 사업계획승인을 받아 시행하는 주택건설사업의 경우 사업주체가 사용검사를 받기 전에 바닥충격음 성능검사기관으로부터 바닥충격음 차단구조의 성능을 검사받아 그 결과를 사용검사권자에게 제출하도록 하는 층간소음 사후확인제가 8월 4일부터 시행된다...
+
+
+[자세히 보기 >](https://news.mobfeed.co.kr/detail?object_id=62e67cba5e65e977dfd34359&sc=o2p3I2y0s2r5).
+
+<!--more-->
