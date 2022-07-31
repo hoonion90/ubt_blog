@@ -16,7 +16,7 @@
             {%- endif -%}
             </li>
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            <!-- <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li> -->
             {%- endif -%}
         </ul>
       </div>
@@ -26,7 +26,9 @@
       </div>
 
       <div class="footer-col footer-col-3">
-        
+        <!-- <p>{{- site.description | escape -}}</p> -->
+        <p>좋은 하루 되세요.</p>
+        <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a>
       </div>
     </div>
 
